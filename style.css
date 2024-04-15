@@ -778,6 +778,7 @@ section {
 
   /* page4 미디어쿼리 start*/
 
+ 
   @media screen and (max-width: 750px) {
 
     .page4-section {
@@ -785,23 +786,56 @@ section {
         background-image: none;  
         padding-left: 1em;
         padding-right: 1em; 
-        min-width: fit-content;
+       
     }
-
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 425px) {
+    
+   .contact-img-wrapper {
+      margin-bottom: 1em;
+    } 
+   
+   .contact-text-wrapper h3 {
+     font-size: 1em;
+     min-width: 360px;
+   }
+ 
+   .contact-img-wrapper img {
+    width: 15em;
+   }
+    
+  .page4-section {
+    flex-shrink: 1;
+    text-wrap: nowrap;
+  }
+  .input-category {
+
+    flex-wrap: nowrap;
+  }
+.page4-input-wrapper {
+  width: 90%;
+}
+
+
+@media screen and (max-height: 767px) {
+
     .page4-section {
-      padding-top: 3em;
+      padding-top: 2em;
       padding-bottom: 2em;
-      font-size: smaller; 
     }
-    .contact-img-wrapper img {
-      width: 18em;
-      margin-bottom: 0;
+    .page4-input-wrapper {
+      margin-top: 0.5em;
     }
   }
-
+  .contact-img-wrapper img {
+    width: 11em;
+  }
+  .contact-text-wrapper h3 {
+    font-size: 0.8em;
+    min-width: 360px;
+  }
+}
 
 /* page4 미디어쿼리 end*/
 
@@ -883,7 +917,7 @@ section {
 
   .page5-right-wrapper img {
     content: url(page5-img/part-2-right.png); /* 이미지를 새로운 이미지로 대체 */
-     max-height: 18em; /* 또는 원하는 높이로 설정 */
+     max-height: 19em; /* 또는 원하는 높이로 설정 */
     
   }
 
@@ -892,35 +926,6 @@ section {
   }
 
 }
-
-
-@media screen and (max-width: 1024px) {
-
-  .page5-section {
-    flex-direction: column;
-    max-height: 100vh;
-    overflow: hidden;
- 
-  }
-
-  .page5-left-wrapper, .page5-right-wrapper {
-       
-    padding: 1em 1em 1em 1em;
-    gap: 1em;
-  }
-
-  .page5-right-wrapper h1 {
-    margin-bottom: 2.5em;
-  }
-
-  .page5-left-wrapper img, .page5-right-wrapper img {
-    
-    max-width: 45em;
-    
-  }
-}
-
-
 /* page5 미디어쿼리 end*/
 
 
@@ -931,6 +936,7 @@ section {
     }
 
   }
+
   
   
   @media screen and (max-width: 750px) {
