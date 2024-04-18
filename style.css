@@ -1074,6 +1074,21 @@ section {
     white-space: nowrap; /* p 요소의 텍스트가 줄바꿈을 하지 않도록 설정합니다. */
   }
 }
+
+@media screen and (max-width: 376px) {
+
+  .page6-web-text {
+    font-size: 1.2em;
+    margin-top: 2em;
+  }
+  .page6-mb-process {
+    gap: 2em;
+  }
+  .mb-first-row, .mb-second-row {
+    gap: 1em;
+    
+  }
+}
 /* page6 미디어쿼리 end*/
 
 /* page7 미디어쿼리 start */
