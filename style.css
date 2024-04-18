@@ -15,7 +15,7 @@
 
 
 * {
-  font-family: 'Pretendard';
+  font-family: 'JalnanGothic';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -65,7 +65,8 @@ section {
 }
 
 .page1-logo-wrapper img {
-  width: 9em;
+  max-width: 100%;
+  height: auto;
 }
 
 /*  section starts */
@@ -80,7 +81,7 @@ section {
   margin: 0px;
   padding: 0px;
   font-size: 1.8em;
-  font-family: 'JalnanGothic';
+  font-family: 'Pretendard';
 }
 
 .page1-comment {
@@ -93,24 +94,11 @@ section {
 }
 
 .slogan-image-wrapper img{
-  width: 20em;
+  max-width: 100%;
+  height: auto;
 }
 
-.slogan-btn-wrapper {
-  margin-top: 7em;
-}
 
-.slogan-btn-wrapper button {
-  width: 13em;
-  height: 30px;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 20px;
-  font-size: 1em;
-  font-style: bold;
-  margin-left: 1em;
-}
 
 /* // page 1 */
 
@@ -119,14 +107,15 @@ section {
   background-image: url(page2-img/page_2_bg.png); 
   background-color: black;
   display: flex;
-  justify-content: space-evenly;
+  
   align-items: center;
   flex-wrap: nowrap;
   
-  gap: 7em;
+  justify-content: space-around;
+  
   height: auto; /* 페이지 2의 높이를 자동으로 설정 */
   min-height: 100vh; /* 최소 높이를 페이지 높이로 설정 */
-  min-width: fit-content;
+ 
   
 
 }
@@ -139,8 +128,8 @@ section {
 }
 
 .page2-main-img{
-  width: 20rem;
-  height: 20rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .page2-right-wrapper {
@@ -148,7 +137,7 @@ section {
   flex-direction: column;
   gap: 3em;
   align-items: center;
-  margin-right: -2em;
+ 
 
 }
 
@@ -177,10 +166,11 @@ section {
 }
 
 .portfolio img {   
+
   width: 18em;
   height: 18em;
   object-fit: cover; /* 이미지를 부모 요소에 맞게 크기 조정 */
-  border-radius: 1.5em;
+  border-radius: 1em;
    
 
 }
@@ -196,8 +186,9 @@ section {
   width: 20em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  font-size: 1em;
+  font-size: 1.1em;
   border-radius: 2em;
+  font-family: 'Pretendard';
 }
 /* // page 2 */
 
@@ -228,14 +219,19 @@ section {
   justify-content: center;
 }
 
+.page3-img-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
 
 .page3-btn {
   padding: 15px 80px 15px 80px;
   background-color: rgb(48, 62, 107);
-  color: white;
-  border-radius: 5em;
+  color: rgba(255, 255, 255, 0.722);
+  border-radius: 4em;
   border: 2px solid grey;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-family: 'Pretendard';
 }
 /* // page 3 */
 
@@ -246,6 +242,7 @@ section {
   background-color: black;
   flex-direction: column;
   align-items: center;
+
 }
 
 .contact-img-wrapper {
@@ -255,6 +252,11 @@ section {
 .contact-text-wrapper {
   text-align: center;
   line-height: 2em;
+
+}
+
+.contact-text-wrapper h3 {
+  font-family: 'Pretendard';
 }
 
 .page4-input-wrapper {
@@ -264,10 +266,13 @@ section {
   justify-content: center;
   align-self: center;
   gap: 1em;
+  width: 25em;
 }
 
 .input-name {
   margin-bottom: 0.3em;
+  font-family: 'Pretendard';
+
 }
 
 .input-text {
@@ -276,22 +281,22 @@ section {
 }
 
 
-.front-number {
-  width: 30%;
+.input-number {
+  width: 100%;
   height: 2em;
 }
 
-.end-number {
-  width: 66.9%;
-  height: 2em;
-}
+
 .page4-checkbox {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .page4-checkbox span {
   font-size: 0.9em;
+  font-family: 'Pretendard';
+
 }
 
 .page4-checkbox div {
@@ -299,11 +304,18 @@ section {
   align-items: center;
   gap: 0.2em;
   text-align: center;
+  font-family: 'Pretendard';
+
 }
 
+#input-question {
+  height: 5em;
+}
 
 .personal-info {
   margin-top: 1em;
+  font-family: 'Pretendard';
+
 
 }
 
@@ -313,16 +325,21 @@ section {
   align-items: center;
   gap: 1.8em;
   font-size: 1.5em;
+  font-family: 'Pretendard';
 }
 
 .agreed-box span {
   font-size: 0.6em;
+  font-family: 'Pretendard';
+
 }
 
 .agreed-box button {
   background-color: lightgray;
   border: none;
   padding: 0.25em 2em 0.25em 2em;
+  font-family: 'Pretendard';
+
 } 
 
 .free-consulting-button-wrapper {
@@ -336,6 +353,8 @@ section {
   color: white;
   padding: 1em 8em 1em 8em;
   border-radius: 10em;
+  font-family: 'Pretendard';
+
 }
 
 /* // page 4 */
@@ -350,17 +369,17 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3.5em;
+  gap: 2em;
   
 }
 
 .page5-left-wrapper img {
-  width: 40em;
+  width: 38em;
   height: auto;
 }
 
 .page5-right-wrapper img {
-  width: 40em;
+  width: 38em;
   height: 32.5em;
   margin-top: -2.5em;
 }
@@ -375,6 +394,12 @@ section {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.page5-left-wrapper h1, .page5-right-wrapper h1 {
+  font-family: 'Pretendard';
+
+}
+
 /* page5 end */
 
 
@@ -396,9 +421,8 @@ section {
   margin-top: 5em;
   font-size: 2em;
   /* font-weight: 900px; */
+  
 }
-
-
 
 .page6-process-img-wrapper {
   display: flex;
@@ -406,17 +430,18 @@ section {
   justify-content: center;
   align-items: start;
   gap: 2.5em;
-  
+  width: fit-content;
+  height: auto
 }
 
 .page6-process-img-wrapper .process1, .process2 {
-  width: 6.5em;
-  height: 11em;
+  object-fit: cover;
+  
 }
 
 .page6-process-img-wrapper .process3, .process4 {
-  width: 8.5em;
-  height: 11em;
+  object-fit: cover;
+
 }
 
 .arrow {
@@ -429,6 +454,7 @@ section {
   text-align: center;
   line-height: 0.8em;
   font-size: 1.2em;
+  font-family: 'Pretendard';
 }
 
 .process1-wrapper, .process2-wrapper, .process3-wrapper, .process4-wrapper {
@@ -574,22 +600,16 @@ section {
         background-size: 100% 100%;
         min-width: 375px;
     }
-  .slogan-btn-wrapper {
+
+  .slogan-image-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 3em;
+    justify-content: center;
   }
 
-  .slogan-btn-wrapper button {
-    width: 14em;
-    height: 2.5em;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    font-size: 1em;
-    font-style: bold;
-    margin-left: 1em;
+  .slogan-image-wrapper img{
+      max-width: 80%;
+      height: auto;
+      
   }
 
   .page1-comment {
@@ -644,17 +664,18 @@ section {
   /* 페이지 2의 이미지 크기 조절 */
   
   .page2-left-wrapper, .page2-right-wrapper {
-    margin-right: 1em;
+   margin-left: 1em; 
+   margin-right: 1em;
   }
 
   .page2-left-wrapper img {
-    width: 230px;
-    height: 230px;
+    max-width: 80%;
+    height: auto;
   }
 
   .portfolio img {   
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
   }
 }
 
@@ -671,13 +692,12 @@ section {
     background-color: black;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    
     flex-wrap: wrap;
-    flex-basis: auto;
+  
     height: auto; /* 페이지 2의 높이를 자동으로 설정 */
     min-height: 100vh; /* 최소 높이를 페이지 높이로 설정 */
     flex-direction: column;
-    gap: 1em;
     
     
   }
@@ -689,19 +709,19 @@ section {
   .page2-left-wrapper {
     display: flex;
     justify-content: center;   
-    margin-top: 2em;
+    margin-top: 1em;
     min-width: fit-content;
   }
 
  .page2-main-responsive {
  
-  width: 90%;
+  width: 80%;
   height: auto;
   
  }
 
   .portfolio img {
-    width: 18.5em; /* 포트폴리오 이미지 너비 조절 */
+    width: 18em; /* 포트폴리오 이미지 너비 조절 */
     height: 12em; /* 포트폴리오 이미지 높이 조절 */
   }
 
@@ -711,14 +731,18 @@ section {
   
   .page2-section {
     flex-basis: 1;
-    min-width: fit-content;
+
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
     
   }
 
   .portfolio-container {
     display: flex;
     justify-content: center;
-    margin-left: 0.5em;
+    gap: 1.5em;
+    align-items: center;
   }
 
 
@@ -740,8 +764,8 @@ section {
     gap: 1em;
   }
   .page2-more-btn {
-   margin-right: 1.5em;
-   max-width: 15em;
+ 
+   max-width: 14em;
   }
 }
 
@@ -769,7 +793,10 @@ section {
   
     .page3-btn {
       /* 버튼 크기, 여백, 배치 등을 모바일 화면에 맞게 조정 */
-      max-width: 90%;
+      width: 16em;
+      text-align: center;
+      padding: 1em 2em 1em 2em;
+      
     }
 
 
@@ -786,11 +813,12 @@ section {
         background-image: none;  
         padding-left: 1em;
         padding-right: 1em; 
-       
+        justify-content: flex-start;
+        padding-top: 3em;
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 485px) {
     
    .contact-img-wrapper {
       margin-bottom: 1em;
@@ -825,7 +853,8 @@ section {
       padding-bottom: 2em;
     }
     .page4-input-wrapper {
-      margin-top: 0.5em;
+      margin-top: 1em;
+      gap: 0.5em;
     }
   }
   .contact-img-wrapper img {
@@ -834,6 +863,9 @@ section {
   .contact-text-wrapper h3 {
     font-size: 0.8em;
     min-width: 360px;
+  }
+  .contact-text-wrapper {
+    line-height: 1em;
   }
 }
 
@@ -847,15 +879,16 @@ section {
     .page5-section {
       background-image: url(page5-img/mob_page5_bg.png);   
       flex-direction: column;
-      gap: 2.5em;
       
+      justify-content: space-around;
+    
     }
 
     .page5-left-wrapper {
       padding: 1em;
     }
     .page5-right-wrapper {
-      padding: 1em;
+    
     }
     .page5-left-wrapper img {
       content: url(page5-img/part-1-left.png); /* 이미지를 새로운 이미지로 대체 */
@@ -867,7 +900,7 @@ section {
     .page5-right-wrapper img {
       content: url(page5-img/part-2-right.png); /* 이미지를 새로운 이미지로 대체 */
       max-width: 100%;
-      max-height: 27em;
+      max-height: 24em;
       
     }
 
@@ -887,7 +920,7 @@ section {
    
   }
 
-  @media screen and (max-width: 824px) {
+  @media screen and (max-width: 830px) {
   .page5-left-wrapper h1, .page5-right-wrapper h1 {
     font-size: 1.3em;
   }
@@ -905,7 +938,7 @@ section {
 
   .page5-left-wrapper, .page5-right-wrapper  {
     width: 100%; /* 이미지를 부모 요소에 맞게 조정 */
-    height: 47vh; /* 비율에 맞게 높이 조정 */
+    height: 35vh; /* 비율에 맞게 높이 조정 */
     
   }
 
@@ -936,30 +969,41 @@ section {
     }
 
   }
+  @media screen and (max-width: 900px) {
+    .page6-web-text {
+      width: 100%;
+      font-size: 1.8em;
+      text-align: center;
+      margin-top: 7em;
+      margin-bottom: 3em;
+     }
 
+  }
   
   
   @media screen and (max-width: 750px) {
 
       .page6-section {
         background-image: url(page6-img/mob_page6_bg.png);   
+      gap: 1em;
       }
       
       /* 기존거 숨김 */
       .page6-process {
         display: none;
       }
+
+     /* 기존거 숨김 */
+
       .page6-web-text {
         display: block;
-        max-width: 290px;
+        max-width: 320px;
         min-width: 290px;
         text-align: center;
         font-size: 200%;
         margin-top: 2em;
         font-size: 1.5em;
-        
       }
-      /* 기존거 숨김 */
 
      .page6-mb-section {
       width: 100vw;
@@ -969,6 +1013,7 @@ section {
       display: flex;
       flex-direction: column;
       gap: 3em;
+      
       
      }
 
@@ -1007,17 +1052,20 @@ section {
  @media screen and (min-width: 751px) and (max-width: 1150px) {
   .page6-section {
     gap: 2em; /* 요소들 사이의 간격을 2em로 설정합니다. */
-
+   display: flex;
+   flex-direction: column;
   }
  
   .page6-process-img-wrapper {
     gap: 1em; /* 요소들 사이의 간격을 1em로 설정합니다. */
     max-width: 1.5em;
+    
   }
 
-  .page6-process-img-wrapper .process1, .process2, .process3, .process4 {
-    max-width: 110px; /* 이미지의 최대 너비를 120px로 설정합니다. */
-  }
+ .page6-web-text {
+  width: 100%;
+  text-align: center;
+ }
 
   .arrow {
     max-width: 50px; /* 화살표의 최대 너비를 50px로 설정합니다. */
