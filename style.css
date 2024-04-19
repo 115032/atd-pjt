@@ -973,7 +973,7 @@ section {
     align-items: center;
     width: 1000px;
     gap: 2em;
-    height: 95%;
+    height: 954%;
   }
   .page6-web-text {
     margin-top: 3em;
@@ -1016,26 +1016,29 @@ section {
         font-size: 1.3em;
       }
 
-     
+    
+    .page6-mb-section {
+      width: 80%;
+    }
      .page6-mb-process {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       gap: 2em;
-      
+      max-width: fit-content;      
      }
 
      .mb-first-row {
       display: flex;
       gap: 1.5em;
       align-items: center;
-     
+      width: fit-content;
      }
 
      
      .mb-second-row {
       display: flex;
-      gap: 1.5em;
+      gap: 0.8em;
       align-items: center;
   
      }
