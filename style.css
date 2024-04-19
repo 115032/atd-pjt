@@ -44,9 +44,9 @@ section {
   align-items: start;
   scroll-snap-align: start;
   background-size: 100% 100%;
-  background-attachment: fixed; /* 배경 이미지가 화면에 고정됨 */
+  /* background-attachment: fixed; 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 
 }
 
@@ -54,6 +54,7 @@ section {
 
 .page1-section {
   background-image: url(page1-img/page_1_bg.png);
+  background-size: cover;
   color: white;
  
 }
@@ -104,6 +105,7 @@ section {
 /* // page 2 */
 .page2-section {
   background-image: url(page2-img/page_2_bg.png); 
+  background-size: cover;
   background-color: black;
   display: flex;
   
@@ -114,9 +116,6 @@ section {
   
   height: auto; /* 페이지 2의 높이를 자동으로 설정 */
   min-height: 100vh; /* 최소 높이를 페이지 높이로 설정 */
- 
-  
-
 }
 
 .page2-left-wrapper {
@@ -203,6 +202,8 @@ section {
 
  .page3-section {
   background-image: url(page3-img/page_3_bg.png);
+  background-size: cover;
+  background-position: center;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -238,6 +239,7 @@ section {
 
 .page4-section {
   background-image: url(page4-img/page_4_bg.png);
+
   background-color: black;
   flex-direction: column;
   align-items: center;
@@ -363,35 +365,49 @@ section {
 
 .page5-section {
   background-image: url(page5-img/page_5_bg.png);
+  background-size: cover;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  gap: 2em;
+
   
 }
 
 .page5-left-wrapper img {
-  width: 38em;
+  width: 85%;
   height: auto;
 }
 
 .page5-right-wrapper img {
-  width: 38em;
-  height: 32.5em;
-  margin-top: -2.5em;
+  width: 85%;
+  height: auto;
+  
 }
 
-.page5-left-wrapper, .page5-right-wrapper {
+.page5-left-wrapper  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7em;
+  height: min-content;
+  max-width: fit-content;
+  text-align: center;
+
+}
+
+.page5-right-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8em;
+  gap: 5em;
   height: min-content;
   max-width: fit-content;
-  padding-left: 1em;
-  padding-right: 1em;
+  text-align: center;
+
 }
 
 .page5-left-wrapper h1, .page5-right-wrapper h1 {
@@ -407,61 +423,53 @@ section {
 /* page6 start */
 .page6-section {
   background-image: url(page6-img/page_6_bg.png);
-  background-color: black;
+  background-size: cover;
+  height: 100vh; /* 페이지 7의 배경이 페이지 6과 겹치지 않도록 페이지 6의 높이를 100vh로 설정합니다 */
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 3.5em;
-  height: 100vh; /* 페이지 7의 배경이 페이지 6과 겹치지 않도록 페이지 6의 높이를 100vh로 설정합니다 */
-
-}
-
-.page6-web-text {
-  margin-top: 5em;
-  font-size: 2em;
-  /* font-weight: 900px; */
+  justify-content: center;
+  gap: 3em;
   
 }
 
 .page6-process-img-wrapper {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
-  align-items: start;
-  gap: 2.5em;
-  width: fit-content;
-  height: auto
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-.page6-process-img-wrapper .process1, .process2 {
-  object-fit: cover;
-  
+.process1, .process2, .process3, .process4 {
+  width: 65%;
 }
 
-.page6-process-img-wrapper .process3, .process4 {
-  object-fit: cover;
-
-}
-
-.arrow {
-  width: 2em;
-  height: 5.5em;
-}
-
-.page6-process-img-wrapper p {
-  margin-top: 0.5em;
-  text-align: center;
-  line-height: 0.8em;
-  font-size: 1.2em;
-  font-family: 'Pretendard';
-}
-
-.process1-wrapper, .process2-wrapper, .process3-wrapper, .process4-wrapper {
+.process1-wrapper, 
+.process2-wrapper,
+.process3-wrapper, 
+.process4-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1em;
   align-items: center;
+
 }
+
+.process1-wrapper p, 
+.process2-wrapper p,
+.process3-wrapper p, 
+.process4-wrapper p {
+  line-height: 1.7em;
+  font-family: 'Pretendard';
+  font-size: 1.2em;
+  text-wrap: nowrap;
+}
+
+.page6-web-text {
+  font-size: 1.7em;
+  /* font-weight: 900px; */
+}
+
 
 
 /* page6 end */
@@ -471,7 +479,7 @@ section {
 /* page7 start */
 .page7-section {
   background-image: url(page7-img/page_7_bg.png);
-  background-size: 100% 100% auto ;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom 3.5em; /* 이미지를 가로 중앙에 위치시킵니다. */
   display: flex;
@@ -502,8 +510,10 @@ section {
     
 }
 .page7-logo-wrapper img {
-  width: 7.8em;
-  height: 4.8em;
+  /* width: 7.8em;
+  height: 4.8em; */
+  width: 70%;
+  height: auto;
 }
 
 .page7-content-wrapper {
@@ -552,6 +562,7 @@ section {
 
 .page7-footer p, span {
   font-size: 0.4em;
+  font-family: 'Pretendard';
 }
 
 .page7-footer span {
@@ -596,7 +607,7 @@ section {
       .page1-section{
         background-image: url(page1-img/mob_page1_bg.png);
         color: white;
-        background-size: 100% 100%;
+        background-size: cover;
         min-width: 375px;
     }
 
@@ -873,91 +884,58 @@ section {
 
   /* page5 미디어쿼리 start*/
 
-  @media screen and (max-width: 750px) {
+    
+    @media screen and (max-width:767px) {
 
-    .page5-section {
-      background-image: url(page5-img/mob_page5_bg.png);   
+      /* 기존거 숨기기 */
+      .page5-section {
+        background-image: url(page5-img/mob_page5_bg.png);   
+        background-size: cover;
+      }
+
+       .page5-left-wrapper h1, .page5-right-wrapper h1 {
+        display: none;
+       }
+       .page5-1-desktop-img, .page5-2-desktop-img {
+        display: none;
+       }
+      /* 기존거 숨기기 */
+      
+     .page5-mb-section {
+      display: flex;
       flex-direction: column;
-      
-      justify-content: space-around;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 1em;
+     }
+
+      .page5-1-mobile-img {
+        display: show;
+        width: 100%;
+        height: auto;
+      }
+      .page5-2-mobile-img {
+        display: show;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+      @media (min-width: 768px) {
+        .page5-1-mobile-img {
+          display: none;
+        }
+        .page5-2-mobile-img {
+          display: none;
+        }
+      }
+       
     
-    }
-
-    .page5-left-wrapper {
-      padding: 1em;
-    }
-    .page5-right-wrapper {
-    
-    }
-    .page5-left-wrapper img {
-      content: url(page5-img/part-1-left.png); /* 이미지를 새로운 이미지로 대체 */
-      max-width: 100%;
-      max-height: 100%;
-      
-    }
-  
-    .page5-right-wrapper img {
-      content: url(page5-img/part-2-right.png); /* 이미지를 새로운 이미지로 대체 */
-      max-width: 100%;
-      max-height: 24em;
-      
-    }
-
-    .page5-right-wrapper h1, .page5-left-wrapper h1 {
-      display: none;
-    }
-
-  }
-
-
-  @media screen and (min-width: 751px) {
-    .page5-left-wrapper img, .page5-right-wrapper img {
-      width: 100%; /* 이미지를 부모 요소에 맞게 조정 */
-      height: auto; /* 비율에 맞게 높이 조정 */
-      max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 설정 */
-    }
    
-  }
 
-  @media screen and (max-width: 830px) {
-  .page5-left-wrapper h1, .page5-right-wrapper h1 {
-    font-size: 1.3em;
-  }
-  .page5-right-wrapper {
-    gap: 9.5em;
-  }
-}
-
-@media screen and (max-width: 376px) {
-
-  .page5-section {
-    background-image: url(page5-img/mob_page5_bg.png);   
-   
-  }
-
-  .page5-left-wrapper, .page5-right-wrapper  {
-    width: 100%; /* 이미지를 부모 요소에 맞게 조정 */
-    height: 35vh; /* 비율에 맞게 높이 조정 */
-    
-  }
+     
 
 
-  .page5-left-wrapper img {
-    content: url(page5-img/part-1-left.png); /* 이미지를 새로운 이미지로 대체 */
-  
-  }
-
-  .page5-right-wrapper img {
-    content: url(page5-img/part-2-right.png); /* 이미지를 새로운 이미지로 대체 */
-     max-height: 19em; /* 또는 원하는 높이로 설정 */
-    
-  }
-
-  .page5-right-wrapper h1, .page5-left-wrapper h1 {
-    display: none;
-  }
-
-}
 /* page5 미디어쿼리 end*/
 
 
@@ -965,129 +943,117 @@ section {
   @media screen and (min-width: 751px) {
     .page6-mb-section {
       display: none;
-    }
-
-  }
-  @media screen and (max-width: 900px) {
-    .page6-web-text {
-      width: 100%;
-      font-size: 1.8em;
-      text-align: center;
-      margin-top: 7em;
-      margin-bottom: 3em;
-     }
-
+    }  
   }
   
+  @media screen and (min-width:1025px) {  
+    .page6-tb-section {
+      display: none;
+    } 
+  }  
+
+  
+ /* 태블릿 */
+
+ @media screen and (max-width:1024px) {
+  .page6-section {
+    background-image: url(page6-img/mob_page6_bg.png);   
+    background-size: 100% 100%;
+    gap: 2em;
+  }
+
+  .page6-process-img-wrapper {
+    display: none;
+  }
+  
+  .page6-tb-process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    gap: 2em;
+    height: 95%;
+  }
+  .page6-web-text {
+    margin-top: 3em;
+  }
+  
+  .tb-first-row, .tb-second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    
+  }
+  .tb-arrow {
+    width: 100%;
+    height: auto;
+  }
+
+ }
+ 
   
   @media screen and (max-width: 750px) {
 
       .page6-section {
         background-image: url(page6-img/mob_page6_bg.png);   
-      gap: 1em;
+        background-size: 100% 100%;
       }
       
       /* 기존거 숨김 */
-      .page6-process {
+      .page6-process-img-wrapper {
         display: none;
       }
-
+      .page6-tb-section {
+        display: none;
+      }
      /* 기존거 숨김 */
 
       .page6-web-text {
-        display: block;
-        max-width: 320px;
-        min-width: 290px;
+        width: 14em;
         text-align: center;
-        font-size: 200%;
-        margin-top: 2em;
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
 
-     .page6-mb-section {
-      width: 100vw;
-  
-     }
+     
      .page6-mb-process {
       display: flex;
       flex-direction: column;
-      gap: 3em;
-      
+      justify-content: space-around;
+      gap: 2em;
       
      }
 
      .mb-first-row {
       display: flex;
-      gap: 2em;
+      gap: 1.5em;
       align-items: center;
-  
+     
      }
 
      
      .mb-second-row {
       display: flex;
-      gap: 2em;
+      gap: 1.5em;
       align-items: center;
   
      }
      
      .mb-arrow {
       height: 3em;
-      width: 2em;
+      width: 1em;
      }
 
      .mb-process {
       height: 12.5em;
-      width: 95%;
+      width: 85%;
      }
 
-     .mb-process img {
-      object-fit: 100%;
-   
-     }
-
-  }
-
- @media screen and (min-width: 751px) and (max-width: 1150px) {
-  .page6-section {
-    gap: 2em; /* 요소들 사이의 간격을 2em로 설정합니다. */
-   display: flex;
-   flex-direction: column;
-  }
- 
-  .page6-process-img-wrapper {
-    gap: 1em; /* 요소들 사이의 간격을 1em로 설정합니다. */
-    max-width: 1.5em;
     
   }
 
- .page6-web-text {
-  width: 100%;
-  text-align: center;
- }
 
-  .arrow {
-    max-width: 50px; /* 화살표의 최대 너비를 50px로 설정합니다. */
-  }
-  .page6-process-img-wrapper p {
-    white-space: nowrap; /* p 요소의 텍스트가 줄바꿈을 하지 않도록 설정합니다. */
-  }
-}
-
-@media screen and (max-width: 376px) {
-
-  .page6-web-text {
-    font-size: 1.2em;
-    margin-top: 2em;
-  }
-  .page6-mb-process {
-    gap: 2em;
-  }
-  .mb-first-row, .mb-second-row {
-    gap: 1em;
-    
-  }
-}
 /* page6 미디어쿼리 end*/
 
 /* page7 미디어쿼리 start */
