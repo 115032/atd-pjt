@@ -32,12 +32,17 @@ html, body {
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   
 }
 
-section {
+.page1-section,
+.page2-section,
+.page3-section,
+.page5-section,
+.page6-section,
+.page7-section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -47,6 +52,21 @@ section {
   /* background-attachment: fixed; 
   background-repeat: no-repeat;
   background-position: center; */
+}
+
+.page4-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  scroll-snap-align: start;
+  background-size: 100% 100%;
+
+}
+
+.page8-section {
+
+  scroll-snap-align: start;
 
 }
 
@@ -243,6 +263,7 @@ section {
   background-color: black;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 
 }
 
@@ -365,7 +386,7 @@ textarea {
 
 }
 
-/* // page 4 */
+/* // page 4 ends*/
 
 
 /* page5 starts */
@@ -488,39 +509,42 @@ textarea {
   background-image: url(page7-img/page_7_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom 3.5em; /* 이미지를 가로 중앙에 위치시킵니다. */
+  background-position: center; /* 이미지를 가로 중앙에 위치시킵니다. */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   
 }
 
 .page7-content-wrapper {
-  color: white;
+  color:white ;
 }
 
 .page7-footer {
-  position: relative; /* 페이지에 고정시킵니다. */
+  position: relative;
   bottom: 0; /* 하단에 배치합니다. */
   width: 100%; /* 너비는 화면 전체로 설정합니다. */
-  height: 20%; /* 높이를 화면 높이의 20%로 설정합니다. */
+  height: auto; /* 높이를 화면 높이의 20%로 설정합니다. */
   background-color: whitesmoke; /* 배경색을 회색으로 설정합니다. */
   padding: 1em 0 1em 0;
+  
 }
+  
 
 .page7-logo-wrapper  {
-  margin-top: 2.8em;
-  margin-left: 1.8em;
   
-    
+  margin-left: 1em;
+  margin-top: 1.5em;  
 }
 .page7-logo-wrapper img {
   /* width: 7.8em;
   height: 4.8em; */
-  width: 70%;
+  width: 90%;
   height: auto;
+
+  
 }
 
 .page7-content-wrapper {
@@ -537,12 +561,8 @@ textarea {
   font-size: smaller;
 }
 
-.page7-content-wrapper h3 {
-  /* font-weight: bold; */
-}
 
-
-.page7-contet-secondRow {
+.page7-content-secondRow {
   display: flex;
   gap: 26em;
   margin-bottom: -2em;
@@ -830,7 +850,7 @@ textarea {
         background-image: none;  
         padding-left: 1em;
         padding-right: 1em; 
-        justify-content: flex-start;
+        justify-content: center;
         padding-top: 3em;
     }
   }
@@ -1081,9 +1101,12 @@ textarea {
 @media screen and (max-width: 750px) {
 
   .page7-section {
-    background-image: url(page7-img/mob_page7_bg.png); 
+    background-image: url(page7-img/mob_page7_bg_revised.png); 
     background-position: center; 
+  }
 
+  .page8-section {
+    display: none;
   }
   
   .page7-content-wrapper {
