@@ -47,7 +47,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: start;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   background-size: 100% 100%;
   /* background-attachment: fixed; 
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: start;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   background-size: 100% 100%;
 
 }
@@ -932,8 +932,8 @@ textarea {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      gap: 1em;
+      justify-content: center;
+      gap: 3em;
      }
 
       .page5-1-mobile-img {
@@ -958,11 +958,6 @@ textarea {
       }
        
     
-   
-
-     
-
-
 /* page5 미디어쿼리 end*/
 
 
@@ -1025,6 +1020,9 @@ textarea {
       .page6-section {
         background-image: url(page6-img/mob_page6_bg.png);   
         background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       
       /* 기존거 숨김 */
@@ -1040,6 +1038,7 @@ textarea {
         width: 14em;
         text-align: center;
         font-size: 1.3em;
+        margin-top: 0;
       }
 
     
@@ -1103,6 +1102,9 @@ textarea {
   .page7-section {
     background-image: url(page7-img/mob_page7_bg_revised.png); 
     background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page8-section {
