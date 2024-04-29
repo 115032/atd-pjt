@@ -1103,8 +1103,7 @@ textarea {
     background-image: url(page7-img/mob_page7_bg_revised.png); 
     background-position: center; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
   }
 
   .page8-section {
@@ -1114,6 +1113,9 @@ textarea {
   .page7-content-wrapper {
     position: none;
   }
+.page7-mb-content-wrapper {
+  margin-top: 0.8em;
+}
 
   .page7-footer {
     display: none;
@@ -1126,6 +1128,7 @@ textarea {
   .page7-web-text-wrapper {
     display: none;
   }
+  
 
   .page7-mob-text-wrapper {
     width: 100%;
@@ -1142,36 +1145,36 @@ textarea {
 
 @media screen and (min-height: 681px) {
   .page7-mob-text-wrapper img {
-    height: 48em;
+    height: 51em;
   }
 
 }
 @media screen and (min-height: 751px) {
   .page7-mob-text-wrapper img {
-    height: 51em;
+    height: 52em;
   }
 }
 
 @media screen and (min-height: 800px) {
   .page7-mob-text-wrapper img {
-    height: 53em;
+    height: 54em;
   }
 }
 
 @media screen and (min-height: 840px) {
   .page7-mob-text-wrapper img {
-    height: 55em;
+    height: 56em;
   }
 }
 @media screen and (min-height: 880px) {
   .page7-mob-text-wrapper img {
-    height: 57em;
+    height: 58em;
   }
 }
 
 @media screen and (min-height: 914px) {
   .page7-mob-text-wrapper img {
-    height: 59em;
+    height: 60em;
   }
 }
 
