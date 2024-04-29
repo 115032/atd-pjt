@@ -1129,11 +1129,12 @@ textarea {
 
   .page7-mob-text-wrapper {
     position: relative;
-    top: -0.6em;
+    
   }
 
   .page7-mob-text-wrapper img {
-   height: 50em;
+   height: 100%;
+   width: 100%;
     
   }
 }
