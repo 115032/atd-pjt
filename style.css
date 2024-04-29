@@ -1103,6 +1103,7 @@ textarea {
     background-image: url(page7-img/mob_page7_bg_revised.png); 
     background-position: center; 
     display: flex;
+    flex-direction: row;
    
   }
 
@@ -1133,50 +1134,17 @@ textarea {
   .page7-mob-text-wrapper {
     width: 100%;
     height: 100%;
+    text-align: center;
    
   }
 
   .page7-mob-text-wrapper img {
    
-   width: 100%;
-   
+   width: 92%;
+   height: 92%;   
   }
 }
 
-@media screen and (min-height: 681px) {
-  .page7-mob-text-wrapper img {
-    height: 51em;
-  }
-
-}
-@media screen and (min-height: 751px) {
-  .page7-mob-text-wrapper img {
-    height: 52em;
-  }
-}
-
-@media screen and (min-height: 800px) {
-  .page7-mob-text-wrapper img {
-    height: 54em;
-  }
-}
-
-@media screen and (min-height: 840px) {
-  .page7-mob-text-wrapper img {
-    height: 56em;
-  }
-}
-@media screen and (min-height: 880px) {
-  .page7-mob-text-wrapper img {
-    height: 58em;
-  }
-}
-
-@media screen and (min-height: 914px) {
-  .page7-mob-text-wrapper img {
-    height: 60em;
-  }
-}
 
 
 @media screen and (min-width: 751px) and (min-height: 900px) {
