@@ -250,7 +250,29 @@
 
 <!-- page4 start -->
   <section class="page4-section">
-    
+
+  <!-- personal info modal popup -->
+  <div id="myModal" class="modal-wrapper">
+    <div class="modal-content">
+        <p class="modal-title">개인정보 수집 ‧ 이용 ‧ 제공 동의서</p>
+        <p>■ ATD(주식회사 에이티디)의 개인정보 수집 이용 목적은 다음과 같습니다.</p>
+        <p>내용을 자세히 읽어보신 후 동의 여부를 결정하여 주시기 바랍니다.</p>
+        <p>본인은 귀사에 문의사항을 제출함에 따라 [개인정보 보호법] 제15조 및 제17조에 따라 아래의 내용으로 개인정보를 수집, 이용 및 제공하는데 동의합니다.</p>
+        <p>□ 개인정보의 수집 및 이용에 관한 사항</p>
+        <p> &nbsp- 수집하는 개인정보 항목 (문의사항 양식 내용 일체) : 기업명, 담당자명, 연락처, 이메일, 문의내용과 그 外 문의사항 기재 내용 
+          일체</p>
+        <p> &nbsp- 개인정보의 이용 목적 : 수집된 개인정보를 사업장 문의사항 확인 및 그에 대한 답변 및 상담의 자료로 활용하며, 목적 외의 용도로는 사용하지 않습니다.</p>
+        <p>□ 개인정보의 보관 및 이용 기간</p>
+        <p> &nbsp- 귀하의 개인정보를 다음과 같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우 <br> [개인정보 보호법] 제21조에 따라 처리합니다.</p>
+        <p>필수 수집항목에 대한 동의를 거절하는 경우 서비스 이용이 제한될 수 있습니다.</p>
+       <div class="modal-close-btn-wrapper"> 
+        <button class="modal-close-btn">닫기</button>
+       </div>
+        </div>
+  </div>
+  
+  <!-- personal info modal popup -->
+ 
     <div class="contact-img-wrapper">
       <img src="page4-img/Contact us.png">
     </div>
@@ -325,7 +347,7 @@
                 <input type="checkbox">
                 <span>동의함</span>
               </div>
-                <button>수집 및 이용동의 내용 상세보기</button> 
+                <button class="agreement-content-popup-btn">수집 및 이용동의 내용 상세보기</button> 
           </div>
         </div>
 
@@ -378,6 +400,42 @@
 
 </div>
 
+<script>
+  // 모달을 열기 위한 이벤트 핸들러 함수
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // 모달을 닫기 위한 함수
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  // 페이지가 로드될 때 실행되는 함수
+  window.onload = function() {
+    // "수집 및 이용동의 내용 상세보기" 버튼에 클릭 이벤트 추가
+    let agreementButton = document.querySelector(".agreement-content-popup-btn");
+    if (agreementButton) {
+      agreementButton.addEventListener("click", openModal);
+    }  
+    
+    // 모달 닫기 버튼에 클릭 이벤트 추가
+    var closeButton = document.querySelector(".modal-close-btn");
+    if (closeButton) {
+      closeButton.addEventListener("click", closeModal);
+    }
+   
+     window.onclick = function(event) {
+      var modal = document.getElementById("myModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
+  };
+  
+  </script>
 
 </body>
 </html>
